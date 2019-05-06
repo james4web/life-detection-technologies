@@ -8,15 +8,15 @@
     pointer-events: none
     // Tablet and above 
     @media screen and (min-width : $breakpoint-tablet)
-        svg:nth-child(1)
-            display: block
-        svg:nth-child(2)
+        .home-hero-image-m
             display: none
+        .home-hero-image
+            display: block
     // Under Tablet
     @media screen and (max-width : $breakpoint-tablet)
-        svg:nth-child(2)
+        .home-hero-image-m
             display: block
-        svg:nth-child(1)
+        .home-hero-image
             display: none
     @media screen and (max-width : $breakpoint-phone)
         min-height: inherit
