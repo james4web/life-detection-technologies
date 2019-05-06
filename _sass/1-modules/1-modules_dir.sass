@@ -9,15 +9,16 @@
     // Tablet and above 
     @media screen and (min-width : $breakpoint-tablet)
         .home-hero-image-m
-            display: none
+            display: none !important
         .home-hero-image
-            display: block
+            display: block !important
     // Under Tablet
     @media screen and (max-width : $breakpoint-tablet)
         .home-hero-image-m
-            display: block
+            display: block !important
         .home-hero-image
-            display: none
+            display: none !important
+            
     @media screen and (max-width : $breakpoint-phone)
         min-height: inherit
         .text-container
