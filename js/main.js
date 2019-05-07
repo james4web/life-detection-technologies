@@ -46,46 +46,46 @@ $('#home-hero').each(function () {
       autoAlpha: 0,
       ease: Power4.easeOut,
     },"-=1")
-    .staggerFrom(source, 1, {
-      stroke: "#dddddd",
-      ease: Back.easeOut.config(1.7),
-    },)
-    .from(circle1, 1.7, {
-      scale: 0.75,
-      autoAlpha: 0,
-      transformOrigin: "center bottom",
-      ease: Power1.easeOut,
-    },)
-    .from(circle2, 1.7, {
-      scale: 0.75,
-      autoAlpha: 0,
-      transformOrigin: "center bottom",
-      ease: Power1.easeOut,
-    },"-=1")
-    .from(circle3, 1.7, {
-      scale: 0.8,
-      autoAlpha: 0,
-      transformOrigin: "center bottom",
-      ease: Power1.easeOut,
-    },"-=1")
-    .from('#home-hero .hero-text-1', 1.2, {
-      autoAlpha: 0,
-      ease: Power2.easeOut,
-      // drawSVG: 0,
-    },)
-    .from('#home-hero .hero-text-2', 1.2, {
-      autoAlpha: 0,
-      ease: Power2.easeOut,
-      // drawSVG: 0,
-    },"-=.5")
-    .from('#home-hero .hero-text-3', 1.2, {
-      autoAlpha: 0,
-      ease: Power2.easeOut,
-      // drawSVG: 0,
-    },"-=.5")
-    .from('.home-hero', 1, {
-      backgroundColor: 'white',
-    })
+    // .staggerFrom(source, 1, {
+    //   stroke: "#dddddd",
+    //   ease: Back.easeOut.config(1.7),
+    // },)
+    // .from(circle1, 1.7, {
+    //   scale: 0.75,
+    //   autoAlpha: 0,
+    //   transformOrigin: "center bottom",
+    //   ease: Power1.easeOut,
+    // },)
+    // .from(circle2, 1.7, {
+    //   scale: 0.75,
+    //   autoAlpha: 0,
+    //   transformOrigin: "center bottom",
+    //   ease: Power1.easeOut,
+    // },"-=1")
+    // .from(circle3, 1.7, {
+    //   scale: 0.8,
+    //   autoAlpha: 0,
+    //   transformOrigin: "center bottom",
+    //   ease: Power1.easeOut,
+    // },"-=1")
+    // .from('#home-hero .hero-text-1', 1.2, {
+    //   autoAlpha: 0,
+    //   ease: Power2.easeOut,
+    //   // drawSVG: 0,
+    // },)
+    // .from('#home-hero .hero-text-2', 1.2, {
+    //   autoAlpha: 0,
+    //   ease: Power2.easeOut,
+    //   // drawSVG: 0,
+    // },"-=.5")
+    // .from('#home-hero .hero-text-3', 1.2, {
+    //   autoAlpha: 0,
+    //   ease: Power2.easeOut,
+    //   // drawSVG: 0,
+    // },"-=.5")
+    // .from('.home-hero', 1, {
+    //   backgroundColor: 'white',
+    // })
 
     var scene = new ScrollMagic.Scene({
       triggerElement: '#home-hero',
@@ -338,11 +338,11 @@ $('#hero-split .ot-hero').each(function () {
   let gradient = document.querySelectorAll('.ot-hero #yellow-gradient, .ot-hero #blue-gradient, .ot-hero #green-gradient')
   
   animateIn
-  .staggerFrom(circles, .03, {
-    scale: 0,
-  transformOrigin: "center",
-    ease: Bounce.easeOut,
-  },.1)
+  // .staggerFrom(circles, .03, {
+  //   scale: 0,
+  // transformOrigin: "center",
+  //   ease: Bounce.easeOut,
+  // },.1)
   .from(graph, 2, {drawSVG: 0})
   .from(gradient, 1, {
     autoAlpha:0,
