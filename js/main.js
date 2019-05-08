@@ -39,13 +39,13 @@ $('#home-hero').each(function () {
   var controller = new ScrollMagic.Controller();
 
   abc
-    .from(heroImage, 1, {
-      y: 40,
+    .from(heroImage, 1.5, {
+      y: 50,
       transformOrigin: "center bottom",
-      scale: 1.1,
+      scale: 1.2,
       autoAlpha: 0,
       ease: Power4.easeOut,
-    },"-=1")
+    },)
     // .staggerFrom(source, 1, {
     //   stroke: "#dddddd",
     //   ease: Back.easeOut.config(1.7),
