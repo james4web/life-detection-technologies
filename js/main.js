@@ -40,7 +40,14 @@ $('#home-hero').each(function () {
   var controller = new ScrollMagic.Controller();
 
   abc
-    .from(heroImage, heroImageM, 2.5, {
+    .from(heroImage, 2.5, {
+      y: 70,
+      transformOrigin: "center bottom",
+      scale: 1.2,
+      autoAlpha: 0,
+      ease: Power4.easeOut,
+    },"0")
+    .from(heroImageM, 2.5, {
       y: 70,
       transformOrigin: "center bottom",
       scale: 1.2,
@@ -339,11 +346,6 @@ $('#hero-split .ot-hero').each(function () {
   let gradient = document.querySelectorAll('.ot-hero #yellow-gradient, .ot-hero #blue-gradient, .ot-hero #green-gradient')
   
   animateIn
-  // .staggerFrom(circles, .03, {
-  //   scale: 0,
-  // transformOrigin: "center",
-  //   ease: Bounce.easeOut,
-  // },.1)
   .from(graph, 2, {drawSVG: 0})
   .from(gradient, 1, {
     autoAlpha:0,
@@ -352,7 +354,7 @@ $('#hero-split .ot-hero').each(function () {
   },"-=.5")
 	
 	var scene = new ScrollMagic.Scene({
-		triggerElement: this,
+		triggerElement: '#hero-split',
 		})
 		.addIndicators()
 		.setTween(animateIn).addTo(othero);
