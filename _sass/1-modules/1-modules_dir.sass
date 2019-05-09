@@ -265,6 +265,9 @@
         .row
             .col-sm
                 padding-bottom: 0
+                height: auto
+                padding-top: 40%
+                padding-bottom: 20%
 
 
 // old tech section
@@ -327,16 +330,12 @@
                         position: relative
                     &:nth-child(3)
                         display: none
+
                 @media screen and (max-width : $breakpoint-tablet)
                     position: relative !important
                     left: auto !important
                     top: auto !important
                     height: auto !important
-                    width: 100% !important
-                    &:nth-child(1), &:nth-child(2), &:nth-child(3)
-                        display: none !important
-                    &:nth-child(4)
-                        display: block
 
                 @media screen and (max-width : $breakpoint-phone)
                     &:nth-child(2), &:nth-child(3)
@@ -347,7 +346,8 @@
     @media screen and (max-width : $breakpoint-desktop) 
         .col-md
             &:nth-child(2)
-                transform: translateX(-80px) !important   
+                transform: translateX(-80px) !important 
+                padding-top: 20px 
     @media screen and (max-width : $breakpoint-laptop)
         padding-bottom: 50px
         .col-md
@@ -356,13 +356,17 @@
                 margin: 0 auto 40px auto
                 width: 100% !important
             &:nth-child(2)
-                transform: translateX(-80px) !important
+                transform: translateX(0px) !important
 
     @media screen and (max-width : $breakpoint-phone)
         padding-top: 0
         .col-md
             &:nth-child(1)
                 padding-bottom: 0 !important
+                img
+                    padding-bottom: 30px
+                    &:nth-child(1)
+                        display: none
     
 // New tech section
 #new-tech-section
@@ -462,7 +466,7 @@
                 margin-left: auto
     @media screen and (max-width : $breakpoint-tablet) 
         .row
-            flex-direction: column
+            // flex-direction: column
             .side-1
                 img 
                     margin: 0 auto 60px auto
@@ -494,14 +498,16 @@
         h1
             color: #fff
             letter-spacing: -1px
-        p
+        h3
             max-width: 700px
             line-height: 1.7em
             max-width: 650px
-            font-size: 22px
+            // font-size: 22px
             font-weight: 400
             margin-bottom: 0
             color: $blue-4
+    @media screen and (max-width : $breakpoint-desktop)
+        padding: 100px 0 !important 
 
 #data-block
     .row
