@@ -7,13 +7,13 @@
     margin-top: 52px
     pointer-events: none
     // Tablet and above 
-    @media screen and (min-width : 768px)
+    @media screen and (min-width : $breakpoint-laptop)
         .home-hero-image-m
             display: none !important
         .home-hero-image
             display: block !important
     // Under Tablet
-    @media screen and (max-width : 768px)
+    @media screen and (max-width : $breakpoint-tablet)
         min-height: 0
         height: calc(100vh - 100px)
         .home-hero-image-m
