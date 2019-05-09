@@ -6,27 +6,6 @@
     position: relative
     margin-top: 52px
     pointer-events: none
-    // Tablet and above 
-    @media screen and (min-width : $breakpoint-laptop)
-        .home-hero-image-m
-            display: none !important
-        .home-hero-image
-            display: block !important
-    // Under Tablet
-    @media screen and (max-width : $breakpoint-tablet)
-        min-height: 0
-        height: calc(100vh - 100px)
-        .home-hero-image-m
-            display: block !important
-        .home-hero-image
-            display: none !important
-
-    @media screen and (max-width : $breakpoint-phone)
-        min-height: inherit
-        .text-container
-            padding-top: 20vh !important
-            h1
-                text-align: center
 
     .home-hero-image, .home-hero-image-m, svg
         position: absolute
@@ -37,7 +16,6 @@
             .hero-text-1, .hero-text-2, .hero-text-3
                 display: none
                 text-transform: uppercase
-
     .text-container
         max-width: 650px
         padding-top: 160px
@@ -47,6 +25,31 @@
             font-weight: 700
             letter-spacing: -.7px
             display: inline-block !important
+    // laptop and above 
+    @media screen and (min-width : $breakpoint-laptop)
+        .home-hero-image-m
+            display: none !important
+        .home-hero-image
+            display: block !important
+
+    // Under laptop
+    @media screen and (max-width : $breakpoint-laptop)
+        min-height: 0
+        height: calc(100vh - 50px)
+        .home-hero-image-m
+            display: block !important
+        .home-hero-image
+            display: none !important
+        .text-container
+            max-width: 550px 
+            margin-top: 15%
+
+    @media screen and (max-width : $breakpoint-phone)
+        min-height: inherit
+        .text-container
+            padding-top: 20vh !important
+            h1
+                text-align: center
 
 
 // Home 3 pointer - used on homepage

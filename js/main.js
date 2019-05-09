@@ -32,6 +32,7 @@ $('#home-hero').each(function () {
   const circle3 = document.querySelectorAll('#home-hero .circle-3');
   const heroHome = document.querySelectorAll('.home-hero');
   const heroImage = document.querySelectorAll('.home-hero-image');
+  const heroImageM = document.querySelectorAll('.home-hero-image-m');
   const source = document.querySelectorAll('.source ellipse');
   const homeHeroText = document.querySelectorAll('.text-container');
 
@@ -39,7 +40,7 @@ $('#home-hero').each(function () {
   var controller = new ScrollMagic.Controller();
 
   abc
-    .from(heroImage, 2.5, {
+    .from(heroImage, heroImageM, 2.5, {
       y: 70,
       transformOrigin: "center bottom",
       scale: 1.2,
