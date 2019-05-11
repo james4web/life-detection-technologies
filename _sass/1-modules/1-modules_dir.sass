@@ -110,8 +110,9 @@
             margin-bottom: 0
         &.title
             color: $muted
-            font-size: 14px
+            font-size: 15px
             text-transform: uppercase
+            letter-spacing: .5px
             font-weight: 600
             margin-bottom: 10px
     @media screen and (max-width : $breakpoint-phone)
@@ -121,6 +122,19 @@
         p
             &.testimonial
                 font-size: 25px
+    &.lot-of-text
+        margin-top: 100px
+        margin-bottom: 130px
+        .row .testimonial-center
+            max-width: 1000px
+            padding: 45px 0 40px 0
+            border-top-width: 6px
+            border-bottom-width: 6px
+            p.testimonial
+                // font-size: 30px
+                letter-spacing: -.5px
+                margin-bottom: 40px
+                line-height: 1.7em
 
 // Video section - used on homepage
 #home-video
@@ -160,12 +174,12 @@
 
 // Better data section - used on homepage
 #deep-dive
-    margin-bottom: 100px
+    margin-bottom: 120px
     margin-top: 100px
     h2
         width: 100%
         text-align: center
-        margin-bottom: 120px
+        margin-bottom: 100px
     .col-md
         display: flex
         .img-parent
@@ -421,15 +435,15 @@
         width: calc(100% - 30px)
     h3 
         line-height: 1.3em
-
+    
 // Table 
 #information
     margin-bottom: 150px
     overflow-x: scroll
     @media screen and (max-width : $breakpoint-phone)
         margin-bottom: 100px
-    h4 
-        margin-bottom: 40px
+    h4, h3, h2
+        margin-bottom: 30px
         // border-bottom: 2px solid #eee
         padding-bottom: 10px
         margin-top: 20px
@@ -510,7 +524,7 @@
     // background: #fafafa
     .row
         border-bottom: 1px solid #eee
-        padding: 35px 0
+        padding: 55px 0
         .col-md
             display: flex
             flex-direction: column
