@@ -220,11 +220,11 @@ header#header
                     // border: 2px solid $blue-1
 // Header Mobile
 .header-mobile
-    // z-index: 100
-    // position: absolute
-    // display: block
-    // top: 0
-    // left: 0
+    z-index: 100
+    position: absolute
+    display: block
+    top: 0
+    left: 0
     // a.header-logo-m
     //     position: relative
     //     img 
@@ -233,22 +233,21 @@ header#header
     //         top: 10px
     //         height: 35px
 
-    @media (max-width: 480px) 
-        .container 
-            margin: 0 auto
-            width: 100%
-            height: 100%
-            box-shadow: none
-        
-        .container .header-mobile 
-            position: fixed
+@media (max-width: 480px) 
+    .container 
+        margin: 0 auto
+        width: 100%
+        height: 100%
+        box-shadow: none
+    .container .header-mobile 
+        position: fixed
 
 .header-mobile
     background: white
     overflow: hidden
     height: 55px
     width: 100%
-    z-index: 100
+    z-index: 1
     position: fixed
     transition: all 0.4s ease-out, background 1s ease-out
 
@@ -339,7 +338,7 @@ header#header
     position: relative
     z-index: 100
     display: inline-block
-    // z-index: 2
+    z-index: 2
     float: right
     /* Simply change property to float left to switch icon side :) */
     height: 55px
