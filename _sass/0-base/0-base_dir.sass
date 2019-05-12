@@ -219,7 +219,7 @@ header#header
                     color: white
                     // border: 2px solid $blue-1
 // Header Mobile
-// .header-mobile
+.header-mobile
     // z-index: 100
     // position: absolute
     // display: block
@@ -233,15 +233,15 @@ header#header
     //         top: 10px
     //         height: 35px
 
-@media (max-width: 480px) 
-    .container 
-        margin: 0 auto
-        width: 100%
-        height: 100%
-        box-shadow: none
-	
-    .container .header-mobile 
-        position: fixed
+    @media (max-width: 480px) 
+        .container 
+            margin: 0 auto
+            width: 100%
+            height: 100%
+            box-shadow: none
+        
+        .container .header-mobile 
+            position: fixed
 
 .header-mobile
     background: white
@@ -250,7 +250,6 @@ header#header
     width: 100%
     z-index: 100
     position: fixed
-    top: 0
     transition: all 0.4s ease-out, background 1s ease-out
 
 .header-mobile.menu-open 
