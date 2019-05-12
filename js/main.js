@@ -26,82 +26,82 @@ function hideVideo(div, video_id) {
 // Animations =======================================================================
 // Home hero animations
 
-$('#home-hero').each(function () {
-  const circle1 = document.querySelectorAll('#home-hero .circle-1');
-  const circle2 = document.querySelectorAll('#home-hero .circle-2');
-  const circle3 = document.querySelectorAll('#home-hero .circle-3');
-  const heroHome = document.querySelectorAll('.home-hero');
-  const heroImage = document.querySelectorAll('.home-hero-image');
-  const heroImageM = document.querySelectorAll('.home-hero-image-m');
-  const source = document.querySelectorAll('.source ellipse');
-  const homeHeroText = document.querySelectorAll('.text-container');
+// $('#home-hero').each(function () {
+//   const circle1 = document.querySelectorAll('#home-hero .circle-1');
+//   const circle2 = document.querySelectorAll('#home-hero .circle-2');
+//   const circle3 = document.querySelectorAll('#home-hero .circle-3');
+//   const heroHome = document.querySelectorAll('.home-hero');
+//   const heroImage = document.querySelectorAll('.home-hero-image');
+//   const heroImageM = document.querySelectorAll('.home-hero-image-m');
+//   const source = document.querySelectorAll('.source ellipse');
+//   const homeHeroText = document.querySelectorAll('.text-container');
 
-  var abc = new TimelineMax();
-  var controller = new ScrollMagic.Controller();
+//   var abc = new TimelineMax();
+//   var controller = new ScrollMagic.Controller();
 
-  abc
-    .from(heroImage, 2.5, {
-      y: 70,
-      transformOrigin: "center bottom",
-      scale: 1.2,
-      autoAlpha: 0,
-      ease: Power4.easeOut,
-    },"0")
-    .from(heroImageM, 2.5, {
-      y: 70,
-      transformOrigin: "center bottom",
-      scale: 1.2,
-      autoAlpha: 0,
-      ease: Power4.easeOut,
-    },"0")
-    // .staggerFrom(source, 1, {
-    //   stroke: "#dddddd",
-    //   ease: Back.easeOut.config(1.7),
-    // },)
-    // .from(circle1, 1.7, {
-    //   scale: 0.75,
-    //   autoAlpha: 0,
-    //   transformOrigin: "center bottom",
-    //   ease: Power1.easeOut,
-    // },)
-    // .from(circle2, 1.7, {
-    //   scale: 0.75,
-    //   autoAlpha: 0,
-    //   transformOrigin: "center bottom",
-    //   ease: Power1.easeOut,
-    // },"-=1")
-    // .from(circle3, 1.7, {
-    //   scale: 0.8,
-    //   autoAlpha: 0,
-    //   transformOrigin: "center bottom",
-    //   ease: Power1.easeOut,
-    // },"-=1")
-    // .from('#home-hero .hero-text-1', 1.2, {
-    //   autoAlpha: 0,
-    //   ease: Power2.easeOut,
-    //   // drawSVG: 0,
-    // },)
-    // .from('#home-hero .hero-text-2', 1.2, {
-    //   autoAlpha: 0,
-    //   ease: Power2.easeOut,
-    //   // drawSVG: 0,
-    // },"-=.5")
-    // .from('#home-hero .hero-text-3', 1.2, {
-    //   autoAlpha: 0,
-    //   ease: Power2.easeOut,
-    //   // drawSVG: 0,
-    // },"-=.5")
-    // .from('.home-hero', 1, {
-    //   backgroundColor: 'white',
-    // })
+//   abc
+//     .from(heroImage, 2.5, {
+//       y: 70,
+//       transformOrigin: "center bottom",
+//       scale: 1.2,
+//       autoAlpha: 0,
+//       ease: Power4.easeOut,
+//     },"0")
+//     .from(heroImageM, 2.5, {
+//       y: 70,
+//       transformOrigin: "center bottom",
+//       scale: 1.2,
+//       autoAlpha: 0,
+//       ease: Power4.easeOut,
+//     },"0")
+//     // .staggerFrom(source, 1, {
+//     //   stroke: "#dddddd",
+//     //   ease: Back.easeOut.config(1.7),
+//     // },)
+//     // .from(circle1, 1.7, {
+//     //   scale: 0.75,
+//     //   autoAlpha: 0,
+//     //   transformOrigin: "center bottom",
+//     //   ease: Power1.easeOut,
+//     // },)
+//     // .from(circle2, 1.7, {
+//     //   scale: 0.75,
+//     //   autoAlpha: 0,
+//     //   transformOrigin: "center bottom",
+//     //   ease: Power1.easeOut,
+//     // },"-=1")
+//     // .from(circle3, 1.7, {
+//     //   scale: 0.8,
+//     //   autoAlpha: 0,
+//     //   transformOrigin: "center bottom",
+//     //   ease: Power1.easeOut,
+//     // },"-=1")
+//     // .from('#home-hero .hero-text-1', 1.2, {
+//     //   autoAlpha: 0,
+//     //   ease: Power2.easeOut,
+//     //   // drawSVG: 0,
+//     // },)
+//     // .from('#home-hero .hero-text-2', 1.2, {
+//     //   autoAlpha: 0,
+//     //   ease: Power2.easeOut,
+//     //   // drawSVG: 0,
+//     // },"-=.5")
+//     // .from('#home-hero .hero-text-3', 1.2, {
+//     //   autoAlpha: 0,
+//     //   ease: Power2.easeOut,
+//     //   // drawSVG: 0,
+//     // },"-=.5")
+//     // .from('.home-hero', 1, {
+//     //   backgroundColor: 'white',
+//     // })
 
-    var scene = new ScrollMagic.Scene({
-      triggerElement: '#home-hero',
-    })
-    .addIndicators()
-    .setTween(abc).addTo(controller);
+//     var scene = new ScrollMagic.Scene({
+//       triggerElement: '#home-hero',
+//     })
+//     .addIndicators()
+//     .setTween(abc).addTo(controller);
 
-});
+// });
 // Home hero mobile
 
 // Home 3 col animations =======================================
