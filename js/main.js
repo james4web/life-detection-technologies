@@ -343,8 +343,9 @@ $('#hero-split .ot-hero').each(function () {
   var animateIn = new TimelineMax();
   let circles = document.querySelectorAll('.ot-hero #blue-circles circle, .ot-hero #orange-circles circle')
   let graph = document.querySelectorAll('.ot-hero .heart-line, .ot-hero .respiration-line')
+  // let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
   let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
-  
+
   animateIn
   .from(graph, 4, {drawSVG: 0})
   .from(gradient, 1, {
