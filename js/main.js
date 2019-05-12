@@ -338,28 +338,28 @@ $('#new-tech-section').each(function () {
 
 // Our Technology page ==========================================================
 // OT Hero
-$('#hero-split .ot-hero').each(function () {
-  var othero = new ScrollMagic.Controller();
-  var animateIn = new TimelineMax();
-  let circles = document.querySelectorAll('.ot-hero #blue-circles circle, .ot-hero #orange-circles circle')
-  let graph = document.querySelectorAll('.ot-hero .heart-line, .ot-hero .respiration-line')
-  // let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
-  let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
+// $('#hero-split .ot-hero').each(function () {
+//   var othero = new ScrollMagic.Controller();
+//   var animateIn = new TimelineMax();
+//   let circles = document.querySelectorAll('.ot-hero #blue-circles circle, .ot-hero #orange-circles circle')
+//   let graph = document.querySelectorAll('.ot-hero .heart-line, .ot-hero .respiration-line')
+//   // let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
+//   let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
 
-  animateIn
-  .from(graph, 4, {drawSVG: 0})
-  .from(gradient, 1, {
-    autoAlpha:0,
-    transformOrigin: "top",
-    ease: Back.easeOut.config(1.7),
-  },"-=2")
+//   animateIn
+//   .from(graph, 4, {drawSVG: 0})
+//   .from(gradient, 1, {
+//     autoAlpha:0,
+//     transformOrigin: "top",
+//     ease: Back.easeOut.config(1.7),
+//   },"-=2")
 	
-	var scene = new ScrollMagic.Scene({
-		triggerElement: '#hero-split',
-		})
-		.addIndicators()
-		.setTween(animateIn).addTo(othero);
-  });
+// 	var scene = new ScrollMagic.Scene({
+// 		triggerElement: '#hero-split',
+// 		})
+// 		.addIndicators()
+// 		.setTween(animateIn).addTo(othero);
+//   });
 
 
 
