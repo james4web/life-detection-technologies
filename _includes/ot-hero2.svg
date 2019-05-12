@@ -3,12 +3,12 @@
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="50%" y1="21.630622%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#4BF7EB" offset="0%" style="stop-opacity:1"></stop>
-            <stop stop-color="#FFFFFF" offset="100%" style="stop-opacity:1"></stop>
+            <stop stop-color="#4BF7EB" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="54.2936829%" y1="100%" x2="54.2936829%" y2="11.1288087%" id="linearGradient-2">
-            <stop stop-color="#FFFFFF" offset="0%" style="stop-opacity:1"></stop>
-            <stop stop-color="#FBD3BB" offset="100%" style="stop-opacity:1"></stop>
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FBD3BB" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Our-Technology" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

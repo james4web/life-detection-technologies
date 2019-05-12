@@ -392,7 +392,7 @@ $('#old-tech').each(function () {
     
 
   var scene = new ScrollMagic.Scene({
-      triggerElement: this,
+      triggerElement: '#old-tech',
     })
     .addIndicators()
     .setTween(animateIn).addTo(oldTechController);
