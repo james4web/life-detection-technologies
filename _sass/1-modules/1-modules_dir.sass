@@ -260,6 +260,7 @@
         height: calc(100vh - 70px)
         flex-direction: column
         padding-bottom: 50px
+        transform: translateY(-30px)
         h1
             margin-bottom: 30px
             line-height: 1em
@@ -272,10 +273,10 @@
             color: $darkGray
     .ot-hero
         position: absolute
-        bottom: 0
+        bottom: 0px
         left: 0
         width: 100%
-        pointer-events: none
+        // pointer-events: none
     @media screen and (max-width : $breakpoint-phone)
         svg
             display: none
@@ -289,7 +290,7 @@
 
 // old tech section
 #old-tech
-    padding: 100px 0 150px 0
+    padding: 130px 0 200px 0
     ul
         list-style: none
         margin-top: 35px

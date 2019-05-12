@@ -341,17 +341,17 @@ $('#new-tech-section').each(function () {
 $('#hero-split .ot-hero').each(function () {
   var othero = new ScrollMagic.Controller();
   var animateIn = new TimelineMax();
-  let circles = document.querySelectorAll('.ot-hero #circles-yellow circle,.ot-hero #circles-blue circle,.ot-hero #circles-green circle')
-  let graph = document.querySelectorAll('.ot-hero #blue-line,.ot-hero #yellow-line, .ot-hero #green-line')
-  let gradient = document.querySelectorAll('.ot-hero #yellow-gradient, .ot-hero #blue-gradient, .ot-hero #green-gradient')
+  let circles = document.querySelectorAll('.ot-hero #blue-circles circle, .ot-hero #orange-circles circle')
+  let graph = document.querySelectorAll('.ot-hero .heart-line, .ot-hero .respiration-line')
+  let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
   
   animateIn
-  .from(graph, 2, {drawSVG: 0})
+  .from(graph, 4, {drawSVG: 0})
   .from(gradient, 1, {
     autoAlpha:0,
     transformOrigin: "top",
     ease: Back.easeOut.config(1.7),
-  },"-=.5")
+  },"-=2")
 	
 	var scene = new ScrollMagic.Scene({
 		triggerElement: '#hero-split',
