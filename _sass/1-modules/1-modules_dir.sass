@@ -262,17 +262,18 @@
         height: calc(100vh - 70px)
         flex-direction: column
         padding-bottom: 50px
-        // transform: translateY(-30px)
-        h1
-            margin-bottom: 30px
-            line-height: 1em
-        p 
-            margin-bottom: 40px
-            line-height: 1.7em
-            max-width: 600px
-            font-size: 22px
-            font-weight: 400
-            color: $darkGray
+        .text-parent
+            transform: translateY(-30px)
+            h1
+                margin-bottom: 30px
+                line-height: 1em
+            p 
+                margin-bottom: 40px
+                line-height: 1.7em
+                max-width: 600px
+                font-size: 22px
+                font-weight: 400
+                color: $darkGray
     .ot-hero
         position: absolute
         bottom: 0px
@@ -289,6 +290,8 @@
                 height: auto
                 padding-top: 40%
                 padding-bottom: 20%
+                .text-parent
+                    transform: translateY(0px)
 
 
 // old tech section
