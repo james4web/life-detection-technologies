@@ -371,22 +371,22 @@ $('#old-tech').each(function () {
   var animateIn = new TimelineMax();
 
   animateIn
-    .from('#old-tech .img-3', 1.2, {
-    y: 20,
-    scale:0,
-    // autoAlpha: 0,
-    ease: Power4.easeOut,
-    },"=-.8")
-    .from('#old-tech .img-1', 1.2, {
-	  y: 20,
-    scale:0,
-    // autoAlpha: 0,
+    .from('#old-tech .img-1', 1.5, {
+	  y: 50,
+    // scale:.8,
+    autoAlpha: 0,
     ease: Power4.easeOut, 
+    },)
+    .from('#old-tech .img-3', 1.5, {
+    y: 50,
+    // scale:.8,
+    autoAlpha: 0,
+    ease: Power4.easeOut,
     },"=-1.3")
-    .from('#old-tech .img-2', 1.2, {
-	  y: 20,
-    scale:0,
-    // autoAlpha: 0,
+    .from('#old-tech .img-2', 1.5, {
+	  y: 50,
+    // scale:.8,
+    autoAlpha: 0,
     ease: Power4.easeOut,  
     },"=-1.3")
     
