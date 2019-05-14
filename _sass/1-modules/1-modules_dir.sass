@@ -187,15 +187,17 @@
         .img-parent
             flex: 1
             width: 80px
+            text-align: center
+            margin-right: 15px
             img
-                height: 50px
+                height: 65px
         .text-container
             flex: 4
             padding-right: 30px
 
     .row
         &:nth-child(n+2)
-            margin-bottom: 30px
+            margin-bottom: 40px
 
     @media screen and (max-width : $breakpoint-laptop)
         .col-md
@@ -283,9 +285,17 @@
         width: 100%
         transform: translateY(10px)
         pointer-events: none
+    .hero-graph-m
+        display: none
     @media screen and (max-width : $breakpoint-phone)
         svg
             display: none
+        .hero-graph-m
+            display: block
+            position: absolute
+            bottom: 0px
+            left: 0
+            width: 100%
         .row
             .col-sm
                 padding-bottom: 0
@@ -385,12 +395,13 @@
                 transform: translateX(0px) !important
 
     @media screen and (max-width : $breakpoint-phone)
-        padding-top: 0
+        padding-top: 0px
         .col-md
             &:nth-child(1)
                 padding-bottom: 0 !important
                 img
                     padding-bottom: 30px
+                    width: 90% !important
                     &:nth-child(1)
                         display: none
     
@@ -533,7 +544,6 @@
 
 #data-block
     z-index: 100
-    // background: #fafafa
     .row
         border-bottom: 1px solid #eee
         padding: 55px 0

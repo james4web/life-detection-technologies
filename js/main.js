@@ -398,6 +398,22 @@ $('#old-tech').each(function () {
     .setTween(animateIn).addTo(oldTechController);
 });
 
+// At mobile
+const oldTechControllerM = new ScrollMagic.Controller();
+
+$('#old-tech').each(function () {
+  var animateIn = new TimelineMax();
+
+  animateIn
+    .from('#old-tech .img-4', 3,{y: 70, autoAlpha: 0, ease: Power4.easeOut},"-=3")
+    
+  var scene = new ScrollMagic.Scene({
+      triggerElement: '#old-tech',
+    })
+    .addIndicators()
+    .setTween(animateIn).addTo(oldTechControllerM);
+});
+
 // Importance of respiration section
 $('#respiration-importance').each(function () {
   var animateIn = new TimelineMax();
