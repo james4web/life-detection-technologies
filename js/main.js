@@ -405,7 +405,7 @@ $('#old-tech').each(function () {
   var animateIn = new TimelineMax();
 
   animateIn
-    .from('#old-tech .img-4', 3,{y: 70, autoAlpha: 0, ease: Power4.easeOut},"-=3")
+    .from('#old-tech .img-4', 2,{y: 70, autoAlpha: 0, ease: Power4.easeOut},"-=3")
     
   var scene = new ScrollMagic.Scene({
       triggerElement: '#old-tech',
