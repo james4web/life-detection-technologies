@@ -67,6 +67,8 @@
         width: 100%
     .row .col-md
         text-align: center
+        padding-left: 30px
+        padding-right: 30px
         img, svg 
             height: 92px
             margin-bottom: 30px
@@ -125,8 +127,8 @@
             &.testimonial
                 font-size: 25px
     &.lot-of-text
-        margin-top: 100px
-        margin-bottom: 130px
+        margin-top: 140px
+        margin-bottom: 170px
         .row .testimonial-center
             max-width: 1000px
             padding: 45px 0 40px 0
@@ -258,6 +260,7 @@
     margin-top: 50px
     width: 100%
     position: relative
+    overflow: hidden
     .row
         display: flex
     .col-sm
@@ -285,22 +288,14 @@
         width: 100%
         transform: translateY(10px)
         pointer-events: none
-    .hero-graph-m
-        display: none
     @media screen and (max-width : $breakpoint-phone)
-        svg
-            display: none
-        .hero-graph-m
-            display: block
-            position: absolute
-            bottom: 0px
-            left: 0
-            width: 100%
+        .ot-hero
+            width: 250%
         .row
             .col-sm
                 padding-bottom: 0
-                height: auto
-                padding-top: 40%
+                // height: auto
+                padding-top: 17%
                 padding-bottom: 20%
                 .text-parent
                     transform: translateY(0px)
@@ -378,7 +373,7 @@
                         display: none
                         width: 100%
                     &:nth-child(4)
-                        display: block
+                        // display: block
     @media screen and (max-width : $breakpoint-desktop) 
         .col-md
             &:nth-child(2)
@@ -395,7 +390,7 @@
                 transform: translateX(0px) !important
 
     @media screen and (max-width : $breakpoint-phone)
-        padding-top: 0px
+        padding-top: 100px
         .col-md
             &:nth-child(1)
                 padding-bottom: 0 !important
@@ -466,7 +461,7 @@
     @media screen and (max-width : $breakpoint-phone)
         margin-bottom: 100px
     h4, h3, h2
-        margin-bottom: 30px
+        margin-bottom: 40px
         // border-bottom: 2px solid #eee
         padding-bottom: 10px
         margin-top: 20px
