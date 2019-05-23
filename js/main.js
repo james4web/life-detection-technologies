@@ -345,21 +345,24 @@ $('#hero-split .ot-hero').each(function () {
   let graph = document.querySelectorAll('.ot-hero .heart-line, .ot-hero .respiration-line')
   let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
 
-  animateIn
-  .from(graph, 4, {drawSVG: 0})
-  .from(gradient, 1, {
-    autoAlpha:0,
-    transformOrigin: "top",
-    ease: Back.easeOut.config(1.7),
-  },"-=2")
+  
 
   if($('body').width() <= 599) {
     animateIn
-    .from(gradient, 1, {
-      autoAlpha:0,
-      transformOrigin: "top",
-      ease: Back.easeOut.config(1.7),
-    },"-=6")
+      .from(graph, 4, {drawSVG: 0})
+      .from(gradient, 1, {
+        autoAlpha:0,
+        transformOrigin: "top",
+        ease: Back.easeOut.config(1.7),
+      },"-=3")
+    } else {
+      animateIn
+        .from(graph, 4, {drawSVG: 0})
+        .from(gradient, 1, {
+          autoAlpha:0,
+          transformOrigin: "top",
+          ease: Back.easeOut.config(1.7),
+        },"-=2")
     };
 	
 	var scene = new ScrollMagic.Scene({
