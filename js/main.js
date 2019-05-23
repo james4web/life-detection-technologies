@@ -349,7 +349,7 @@ $('#hero-split .ot-hero').each(function () {
 
   if($('body').width() <= 599) {
     animateIn
-      .from(graph, 6, {drawSVG: 0})
+      .from(graph, 8, {drawSVG: 0})
       .from(gradient, 1, {
         autoAlpha:0,
         transformOrigin: "top",
