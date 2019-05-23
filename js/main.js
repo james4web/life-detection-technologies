@@ -354,7 +354,7 @@ $('#hero-split .ot-hero').each(function () {
         autoAlpha:0,
         transformOrigin: "top",
         ease: Back.easeOut.config(1.7),
-      },"-=6.5")
+      },"-=7.5")
     } else {
       animateIn
         .from(graph, 4, {drawSVG: 0})
