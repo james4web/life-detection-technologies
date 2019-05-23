@@ -349,12 +349,12 @@ $('#hero-split .ot-hero').each(function () {
 
   if($('body').width() <= 599) {
     animateIn
-      .from(graph, 8, {drawSVG: 0})
+      .from(graph, 9, {drawSVG: 0})
       .from(gradient, 1, {
         autoAlpha:0,
         transformOrigin: "top",
         ease: Back.easeOut.config(1.7),
-      },"-=4.5")
+      },"-=6.5")
     } else {
       animateIn
         .from(graph, 4, {drawSVG: 0})
@@ -362,7 +362,7 @@ $('#hero-split .ot-hero').each(function () {
           autoAlpha:0,
           transformOrigin: "top",
           ease: Back.easeOut.config(1.7),
-        },"-=4")
+        },"-=2")
     };
 	
 	var scene = new ScrollMagic.Scene({
