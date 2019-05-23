@@ -343,7 +343,6 @@ $('#hero-split .ot-hero').each(function () {
   let animateIn = new TimelineMax();
   let circles = document.querySelectorAll('.ot-hero #blue-circles circle, .ot-hero #orange-circles circle')
   let graph = document.querySelectorAll('.ot-hero .heart-line, .ot-hero .respiration-line')
-  // let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
   let gradient = document.querySelectorAll('.ot-hero .respiration-gradient, .ot-hero .heart-gradient')
 
   animateIn
@@ -353,6 +352,15 @@ $('#hero-split .ot-hero').each(function () {
     transformOrigin: "top",
     ease: Back.easeOut.config(1.7),
   },"-=2")
+
+  if($('body').width() <= 599) {
+    animateIn
+    .from(gradient, 1, {
+      autoAlpha:0,
+      transformOrigin: "top",
+      ease: Back.easeOut.config(1.7),
+    },"-=6")
+    };
 	
 	var scene = new ScrollMagic.Scene({
 		triggerElement: '#hero-split',
@@ -361,27 +369,6 @@ $('#hero-split .ot-hero').each(function () {
 		.setTween(animateIn).addTo(othero);
   });
 
-  $('#hero-split .ot-hero-m').each(function () {
-    let bleh = new ScrollMagic.Controller();
-    let animateInM = new TimelineMax();
-    let circles = document.querySelectorAll('.ot-hero-m #blue-circles circle, .ot-hero #orange-circles circle')
-    let graph = document.querySelectorAll('.ot-hero-m .heart-line, .ot-hero-m .respiration-line')
-    let gradient = document.querySelectorAll('.ot-hero-m .respiration-gradient, .ot-hero-m .heart-gradient')
-  
-    animateIn
-    .from(graph, 4, {drawSVG: 0})
-    .from(gradient, 1, {
-      autoAlpha:0,
-      transformOrigin: "top",
-      ease: Back.easeOut.config(1.7),
-    },"-=2")
-    
-    var scene = new ScrollMagic.Scene({
-      triggerElement: '#hero-split',
-      })
-      .addIndicators()
-      .setTween(animateInM).addTo(bleh);
-    });
 
 
 
