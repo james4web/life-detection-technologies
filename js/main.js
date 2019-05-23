@@ -362,7 +362,7 @@ $('#hero-split .ot-hero').each(function () {
           autoAlpha:0,
           transformOrigin: "top",
           ease: Back.easeOut.config(1.7),
-        },"-=2")
+        },"-=4")
     };
 	
 	var scene = new ScrollMagic.Scene({
